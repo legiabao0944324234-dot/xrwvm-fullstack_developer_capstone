@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Best Cars</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, sans-serif; background:#f4f4f4; }
+    .navbar { background:#1a1a2e; color:white; padding:14px 32px; display:flex; align-items:center; gap:24px; }
+    .navbar .brand { font-size:20px; font-weight:700; color:#e94560; }
+    .navbar a { color:#ccc; text-decoration:none; font-size:14px; }
+    .navbar a.active { color:white; font-weight:600; border-bottom:2px solid #e94560; padding-bottom:2px; }
+    .content { padding:40px; max-width:1000px; margin:0 auto; }
+    h1 { color:#1a1a2e; margin-bottom:30px; }
+    .team-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .card { background:white; border-radius:8px; padding:24px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,.08); }
+    .avatar { width:80px; height:80px; border-radius:50%; background:#e94560; margin:0 auto 14px; display:flex; align-items:center; justify-content:center; color:white; font-size:28px; font-weight:700; }
+    .card h3 { color:#1a1a2e; margin-bottom:4px; }
+    .card .role { color:#e94560; font-size:13px; font-weight:600; margin-bottom:8px; }
+    .card p { color:#666; font-size:13px; line-height:1.5; }
+    .card .email { color:#1a6fa8; font-size:12px; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <span class="brand">Best Cars</span>
+    <a href="/">Home</a>
+    <a href="/about" class="active">About Us</a>
+    <a href="/contact">Contact</a>
+  </div>
+  <div class="content">
+    <h1>About Our Team</h1>
+    <div class="team-grid">
+      <div class="card">
+        <div class="avatar">LB</div>
+        <h3>Le Gia Bao</h3>
+        <div class="role">Full Stack Developer</div>
+        <p>Responsible for Django backend, REST APIs, and database design.</p>
+        <div class="email">legiabao@example.com</div>
+      </div>
+      <div class="card">
+        <div class="avatar">AT</div>
+        <h3>Anh Tuan</h3>
+        <div class="role">Frontend Developer</div>
+        <p>Built React components, UI/UX design, and client-side routing.</p>
+        <div class="email">anhtuan@example.com</div>
+      </div>
+      <div class="card">
+        <div class="avatar">MN</div>
+        <h3>Minh Nguyen</h3>
+        <div class="role">DevOps Engineer</div>
+        <p>Managed CI/CD pipeline, Docker deployment, and cloud services.</p>
+        <div class="email">minhnguyen@example.com</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
